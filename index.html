@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的網頁</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="images/honda-lg.png" alt="logo" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">車款介紹</a></li>
+                        <li><a href="#video" class="nav-link">影片</a></li>
+                        <li><a href="#creative" class="nav-link">內裝</a></li>
+                        <li><a href="#activity" class="nav-link">動力</a></li>
+                        <li><a href="#standard" class="nav-link">規格</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/2019-acura-nsx-review.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>NSX</h1>
+                        <p>MADE IN DREAM</p>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/2019-acura-nsx.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>NSX</h1>
+                        <p>BALANCE OF POWER</p>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/2017-acura-nsx-review.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>NSX</h1>
+                        <p>THE LEGEND CONTINUES</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="1351" height="752" src="https://www.youtube.com/embed/zGDChyfPO34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- 內裝 -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                內裝
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片1" src="images/ef9b0061a6d4ca6525fa6fe59df07fb9.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">全新舒適座艙</span>
+                              
+                            </div>
+                          
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片2" src="images/specification_p2.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">高品質內裝</span>
+                               
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片3" src="images/mobile01-7fa0456fe29c0281504e82eac8d7c0ad.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">高科技中控台</span>
+                               
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <h3>NATURAL PROGRESSION</h3>
+                    <p>WITH PRECISION CRAFTED PERFORMANCE AS THE TOUCHSTONE and innovation as its tenet, new ways were created to</br>
+                        engineer, design, build and produce an iconic, exotic sports car. The culture of forward-thinking and the goal of building a pinnacle</br>
+                        supercar merged to allow innovation as a natural phenomenon, resulting in several world-first technologies in the car itself and its manufacturing processes.</br>
+                    </p>
+                    <h3>THAT FEELING OF EMOTIONAL CONNECTEDNESS reflects both the power of dreams and driven creativity that fuels the craft of engineering.</h3>
+                    <p>Reignited in a new generation of engineers, that connection brought forth a new vision:</br>
+                        to honor the car’s lineage by creating a boldly evolved NSX for a new century.</br>     
+                    </p>
+                    <h1>ACURA NSX</h1>
+                    <p>IT IS YOUR BEST CAR</br>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="video/Honda NSX True Power Has Evolved.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/drivability_p2(2).png">
+                </div>
+
+                <div class="col-md-4 activity_price text-center">
+                    <h2>最強的3.5L V6 DOHC雙渦輪增壓引擎</h2>
+                    </div>
+
+                <div class="col-md-4">
+                    <img src="images/151027-3872-2-9A20D.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 規格 -->
+    <section id="standard" class="standard_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <table class="table table-hover">
+                        <tr>
+                            <h5 scope="col">規格說明：</h5>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="row">引擎規格：</th>
+                                <td>DOHC V 型六汽缸雙渦輪增壓</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">變速箱系統：</th>
+                                <td>DCT 雙離合器自手排變速系統</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">最大扭力 kg-m / rpm：</th>
+                                <td colspan="2">56.1 / 2,000-6,000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">最大馬力 PS(kW) / rpm</th>
+                                <td colspan="2">507 (373) / 6,500-7,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <table class="table">
+                        
+                        <ul class="standard_use">
+                          <img src="images/2019-acura-nsx.jpg" alt="">
+                        </ul>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/honda-lg.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>專 線：0800-567-879</li>
+                        <li>服務時間：週一~週五 AM08:30 - PM 21:00 / 週六~週日AM08:30 - PM 21:30</li>
+                        <li>服務信箱：service@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>Copyright © 2019 Honda Taiwan Co., Ltd. All right reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
